@@ -6,7 +6,12 @@ from django.shortcuts import render
 def generate_road():
     pass
 
+
+def generate_cars():
+    pass
+
+
 def road_controller(request):
-    context = {}
     road = generate_road()
-    return render(request, 'road/index.html' ,context)
+    cars = generate_cars()
+    return render(request, 'road/index.html' ,context = {'cars': cars, 'road': road})
