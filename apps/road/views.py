@@ -14,4 +14,5 @@ def generate_cars():
 def road_controller(request):
     road = generate_road()
     cars = generate_cars()
-    return render(request, 'road/index.html' ,context = {'cars': cars, 'road': road})
+    return render(request, 'road/index.html' ,context = {'cars': cars,
+     'road': road, 'quan_lines':1})

@@ -11,8 +11,8 @@ register = template.Library()
 
 
 @register.simple_tag
-def generate_road():
-    pass
+def generate_road(quan_lines):
+    return quan_lines
 
 
 
